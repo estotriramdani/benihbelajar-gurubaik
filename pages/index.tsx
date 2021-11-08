@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Navbar from '../src/components/molecules/Navbar';
+import Navbar from '../src/components/organisms/Navbar';
 
 const Home: NextPage = () => {
   return (
