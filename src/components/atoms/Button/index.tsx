@@ -1,14 +1,16 @@
 import Link from 'next/link';
+import { ReactNode } from 'react';
 
 interface ButtonProps {
-  title: string;
   bgColor: 'red' | 'transparent';
   borderColor: 'red' | 'dark' | 'white';
   width?: string;
+  roundedFull?: boolean;
+  children: ReactNode;
 }
 
 export default function Button(props: ButtonProps) {
-  const { title, bgColor, borderColor, width } = props;
+  const { bgColor, borderColor, width, roundedFull, children } = props;
   let classes: string = '';
   if (bgColor === 'transparent') {
     classes += 'bg-transparent text-white ';
@@ -19,10 +21,10 @@ export default function Button(props: ButtonProps) {
   }
   return (
     <button
-      className={`px-5 py-2 inline-block text-base focus:outline-none rounded-full border-2 ${classes} ${
-        width ? width : ''
-      }`}>
-      {title}
+      className={`px-5 py-2 inline-block text-base focus:outline-none ${
+        roundedFull ? 'rounded-full' : 'rounded-md'
+      } border-2 ${classes} ${width ? width : ''}`}>
+      {children}
     </button>
   );
 }

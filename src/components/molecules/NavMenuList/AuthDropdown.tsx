@@ -1,5 +1,4 @@
 import { Menu, Transition } from '@headlessui/react';
-import Button from '../../atoms/Button';
 import DropdownMenu from './DropdownMenu';
 
 const lists = [
