@@ -1,4 +1,6 @@
 import type { NextPage } from 'next';
+import { isMobile } from 'react-device-detect';
+import MobileNavbar from '../src/components/organisms/MobileNavbar';
 import Navbar from '../src/components/organisms/Navbar';
 
 const Home: NextPage = () => {
