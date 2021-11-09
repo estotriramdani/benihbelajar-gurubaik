@@ -1,13 +1,15 @@
 import type { NextPage } from 'next';
-import { isMobile } from 'react-device-detect';
-import MobileNavbar from '../src/components/organisms/MobileNavbar';
+import Footer from '../src/components/organisms/Footer';
 import Navbar from '../src/components/organisms/Navbar';
 
 const Home: NextPage = () => {
   return (
     <div className="flex flex-col">
-      <Navbar />
-      <div className="h-64"></div>
+      <main className="flex flex-col min-h-screen">
+        <Navbar />
+        <section className="flex-1">this is main section</section>
+        <Footer />
+      </main>
     </div>
   );
 };

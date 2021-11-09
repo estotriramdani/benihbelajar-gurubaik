@@ -1,15 +1,36 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Button from '../../atoms/Button';
+import MobileNavLink from './MobileNavLink';
 
-//TODO Bikin navbar buat mobilenya kayak documentasi tailwind
-/* 
-  pas belum login, di paling ada ada logo dan buttom "Belajar" justify-between
+interface MobileNavbarProps {
+  isLogin?: boolean;
+}
 
-  setelah login cuma ada logo, sisanya di sidebar yang akan muncul ketika diklik tombol hamburger
-*/
+const lists = [
+  {
+    title: 'Akun Saya',
+    icon: 'person-fill',
+    link: '/account',
+  },
+  {
+    title: 'Notifikasi',
+    icon: 'bell-fill',
+    link: '/notifications',
+  },
+  {
+    title: 'Kelas Favorit',
+    icon: 'heart-fill',
+    link: '/favorite',
+  },
+  {
+    title: 'Keluar',
+    icon: 'box-arrow-right',
+    link: '/',
+  },
+];
 
-export default function MobileNavbar() {
+export default function MobileNavbar(props: MobileNavbarProps) {
+  const { isLogin } = props;
   const toggleMenu = () => {
     const mobileNav = document.getElementById('mobileNav');
     const closeNav = document.getElementById('closeNav');
@@ -34,28 +55,31 @@ export default function MobileNavbar() {
           </a>
         </Link>
         <ul className="mt-3 font-sans">
-          <li className="mb-2 ">
-            <Link href="/mengajar">
-              <a className="text-white bg-primary hover:text-red-700 hover:bg-white transition-all duration-100 block p-3 border-2 border-gray-50 rounded-md active:outline-white">
-                Mengajar
-              </a>
-            </Link>
-          </li>
-          <li className="mb-2 ">
-            <Link href="/belajar">
-              <a className="text-white bg-primary hover:text-red-700 hover:bg-white transition-all duration-100 block p-3 border-2 border-gray-50 rounded-md active:outline-white">
-                Belajar
-              </a>
-            </Link>
-          </li>
+          {!isLogin ? (
+            <>
+              <MobileNavLink href="/mengajar">Mengajar</MobileNavLink>
+              <MobileNavLink href="/belajar">Belajar</MobileNavLink>
+            </>
+          ) : (
+            <>
+              <MobileNavLink href="/mengajar">
+                <i className="bi bi-cart mr-2 "></i> Keranjang (0)
+              </MobileNavLink>
+              {lists.map((list) => (
+                <MobileNavLink key={list.link} href={list.link}>
+                  <i className={`bi bi-${list.icon} mr-2`}></i> {list.title}
+                </MobileNavLink>
+              ))}
+            </>
+          )}
         </ul>
       </nav>
       <div
-        className="fixed w-1/4 h-5/6 right-0 transform transition-all duration-200 translate-x-full z-30  md:hidden"
+        className="fixed w-1/4 h-5/6 right-0 transform transition-all duration-200 translate-x-full z-30 md:hidden"
         id="closeNav"
         onClick={toggleMenu}></div>
       <button
-        className="w-16 h-16 fixed bottom-7 right-5 bg-primary outline-none rounded-full active:ring-4 active:ring-offset-4 active:ring-red-600 md:hidden"
+        className="w-16 h-16 fixed bottom-7 right-5 bg-gradient-to-br to-red-600 from-primary outline-none rounded-full active:ring-4 active:ring-offset-4 ring-offset-transparent active:ring-red-600 md:hidden shadow-2xl border-1 border-white"
         onClick={toggleMenu}
         id="toggleButton">
         <i className="bi bi-list text-2xl text-white cursor-pointer"></i>

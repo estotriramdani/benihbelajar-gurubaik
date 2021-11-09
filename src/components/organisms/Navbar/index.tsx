@@ -1,17 +1,16 @@
 import MobileNavbar from '../MobileNavbar';
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from 'react-device-detect';
 import DesktopNavbar from '../DesktopNavbar';
 
-export default function Navbar() {
+interface NavbarProps {
+  isLogin?: boolean;
+}
+
+export default function Navbar(props: NavbarProps) {
+  const { isLogin } = props;
   return (
     <>
-      <DesktopNavbar />
-      <MobileNavbar />
+      <DesktopNavbar isLogin={isLogin} />
+      <MobileNavbar isLogin={isLogin} />
     </>
   );
 }

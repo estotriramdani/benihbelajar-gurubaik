@@ -2,9 +2,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import NavMenuList from '../../molecules/NavMenuList';
 
-export default function DesktopNavbar() {
+interface DesktopNavbarProps {
+  isLogin?: boolean;
+}
+
+export default function DesktopNavbar(props: DesktopNavbarProps) {
+  const { isLogin } = props;
+
   return (
-    <nav className="w-full h-20 bg-gradient-to-b from-primary to-red-600 md:flex justify-between items-center px-6 sticky top-0 shadow-lg hidden z-40">
+    <nav className="w-full h-20 bg-gradient-to-b from-primary to-red-600 md:flex justify-between items-center px-6 sticky top-0 shadow-lg hidden z-40 ">
       <Link href="/">
         <a>
           <Image
@@ -16,7 +22,7 @@ export default function DesktopNavbar() {
           />
         </a>
       </Link>
-      <NavMenuList isLogin />
+      <NavMenuList isLogin={isLogin} />
     </nav>
   );
 }

@@ -32,7 +32,7 @@ export default function NavMenuList(props: NavMenuListProps) {
         <li title="Keranjang">
           <Link href="/cart">
             <a className="text-white hover:text-red-100 relative inline-block">
-              <span className="text-xs absolute top-0 right-0 text-primary rounded-full bg-gray-50 inline-block h-4 w-4 text-center shadow-xl ">
+              <span className="text-xs absolute -top-1 -right-1.5 text-primary rounded-full bg-gray-50 inline-block h-4 w-4 text-center shadow-xl ">
                 1
               </span>
               <i className="bi bi-cart text-3xl"></i>
