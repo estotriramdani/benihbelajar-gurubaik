@@ -1,4 +1,3 @@
-import { Menu } from '@headlessui/react';
 import Link from 'next/link';
 import ButtonLink from '../../atoms/ButtonLink';
 import AuthDropdown from './AuthDropdown';
