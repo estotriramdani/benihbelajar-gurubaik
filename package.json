@@ -13,11 +13,15 @@
     "next": "12.0.3",
     "react": "17.0.2",
     "react-device-detect": "^2.1.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "16.11.6",
     "@types/react": "17.0.34",
+    "@types/react-slick": "^0.23.7",
+    "@types/slick-carousel": "^1.6.37",
     "autoprefixer": "^10.4.0",
     "eslint": "7",
     "eslint-config-next": "12.0.3",
