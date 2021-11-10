@@ -34,7 +34,7 @@ export default function BannerSlider() {
   };
 
   return (
-    <div className="mt-5 pb-3.5">
+    <div className="mt-10 pb-3.5">
       <div className="relative w-full rounded-xl">
         <Slider {...settings}>
           {images.map((image) => (
