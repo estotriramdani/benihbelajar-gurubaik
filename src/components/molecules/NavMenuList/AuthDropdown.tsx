@@ -28,7 +28,7 @@ export default function AuthDropdown() {
   return (
     <Menu as="ul" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="px-5 py-2 inline-block text-base focus:outline-none rounded-full border-2 border-white hover:border-red-200 focus:border-red-200 hover:text-red-200 bg-transparent text-white ">
+        <Menu.Button className="px-3 py-1 inline-block text-sm focus:outline-none rounded-full border-2 border-white hover:border-red-200 focus:border-red-200 hover:text-red-200 bg-transparent text-white ">
           Murid <i className="bi bi-caret-down inline-block ml-0.5"></i>
         </Menu.Button>
       </div>

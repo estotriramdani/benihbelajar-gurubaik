@@ -21,7 +21,7 @@ export default function ButtonLink(props: ButtonLinkProps) {
   return (
     <Link href={link}>
       <a
-        className={`px-5 py-2 inline-block text-base focus:outline-none rounded-full border-2 ${classes} ${
+        className={`px-5 py-2 inline-block text-sm focus:outline-none rounded-full border-2 ${classes} ${
           width ? width : ''
         }`}>
         {title}

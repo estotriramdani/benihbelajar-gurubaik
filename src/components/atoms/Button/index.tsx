@@ -21,7 +21,7 @@ export default function Button(props: ButtonProps) {
   }
   return (
     <button
-      className={`px-5 py-2 inline-block text-base focus:outline-none ${
+      className={`px-5 py-1 inline-block text-sm focus:outline-none ${
         roundedFull ? 'rounded-full' : 'rounded-md'
       } border-2 ${classes} ${width ? width : ''}`}>
       {children}

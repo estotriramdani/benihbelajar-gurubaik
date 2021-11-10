@@ -35,7 +35,7 @@ export default function NavMenuList(props: NavMenuListProps) {
               <span className="text-xs absolute -top-1 -right-1.5 text-primary rounded-full bg-gray-50 inline-block h-4 w-4 text-center shadow-xl ">
                 1
               </span>
-              <i className="bi bi-cart text-3xl"></i>
+              <i className="bi bi-cart text-2xl"></i>
             </a>
           </Link>
         </li>
