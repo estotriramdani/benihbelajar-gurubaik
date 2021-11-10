@@ -11,7 +11,7 @@ export default function Footer() {
           height={`100%`}
           objectFit="contain"
         />
-        <p className="text-gray-200 text-sm">
+        <p className="text-gray-200 text-sm w-1/2">
           Benih Belajar adalah tempat kamu menemukan passionmu dan
           mengembangkannya bersama guru-guru yang terampil di bidang tersebut.
         </p>
