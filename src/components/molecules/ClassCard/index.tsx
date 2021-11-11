@@ -1,15 +1,18 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/dist/client/link';
+import { rgbDataURL } from '../../../utils/images/colorBlurry';
 import Gap from '../../atoms/Gap';
 
 export default function ClassCard() {
   return (
-    <div className="block w-60 p-3 shadow-lg rounded-lg font-sans flex-shrink-0">
-      <div className="relative w-full h-36 rounded-lg overflow-hidden">
+    <div className="block w-60 p-3 shadow rounded-lg font-sans flex-shrink-0">
+      <div className="relative w-full h-36 rounded-lg overflow-hidden z-10">
         <Image
           src="https://source.unsplash.com/300x210/?class"
           alt=""
           layout="fill"
+          placeholder="blur"
+          blurDataURL={rgbDataURL(187, 21, 41)}
           objectFit="cover"
         />
       </div>
@@ -37,10 +40,12 @@ export default function ClassCard() {
           <i className="bi bi-currency-dollar mr-1"></i> Rp49.000,00*
         </p>
         <div className="flex gap-1 mt-3">
-          <button className="rounded-md h-8 flex-1 border border-primary text-primary font-medium text-sm d-block hover:bg-primary hover:text-white">
-            Lihat Detail
-          </button>
-          <button className="rounded-md w-8 h-8 bg-gray-300 text-gray-800 hover:bg-gray-400 transition-all duration-100">
+          <Link href="/">
+            <a className="d-inline-block flex justify-center items-center rounded-md h-8 flex-1 border border-primary text-primary font-medium text-sm d-block hover:bg-primary hover:text-white">
+              Lihat Detail
+            </a>
+          </Link>
+          <button className="rounded-md text-center w-8 h-8 bg-gray-300 text-gray-800 hover:bg-gray-400 transition-all duration-100">
             <i className="bi bi-heart"></i>
           </button>
         </div>

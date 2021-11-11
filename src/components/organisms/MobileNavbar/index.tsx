@@ -42,7 +42,8 @@ export default function MobileNavbar(props: MobileNavbarProps) {
     <>
       <nav
         className="fixed h-full w-3/4 bg-primary left-0 top-0 shadow-lg p-4 z-40 transform transition-all duration-300 ease-in -translate-x-full md:hidden"
-        id="mobileNav">
+        id="mobileNav"
+      >
         <Link href="/">
           <a>
             <Image
@@ -75,13 +76,15 @@ export default function MobileNavbar(props: MobileNavbarProps) {
         </ul>
       </nav>
       <div
-        className="fixed w-1/4 h-5/6 right-0 transform transition-all duration-200 translate-x-full z-30 md:hidden"
+        className="fixed w-1/4 h-5/6 right-0 transform transition-all duration-200 translate-x-full z-50 md:hidden"
         id="closeNav"
-        onClick={toggleMenu}></div>
+        onClick={toggleMenu}
+      ></div>
       <button
         className="w-16 h-16 fixed bottom-7 right-5 bg-gradient-to-br to-red-600 from-primary outline-none rounded-full active:ring-4 active:ring-offset-4 ring-offset-transparent active:ring-red-600 md:hidden shadow-2xl border-1 border-white"
         onClick={toggleMenu}
-        id="toggleButton">
+        id="toggleButton"
+      >
         <i className="bi bi-list text-2xl text-white cursor-pointer"></i>
       </button>
     </>
