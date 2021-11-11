@@ -1,9 +1,13 @@
 import type { NextPage } from 'next';
+import Image from 'next/image';
 import Gap from '../src/components/atoms/Gap';
 import ClassFilter from '../src/components/molecules/ClassFilter';
+import HeadingGroup from '../src/components/molecules/HeadingGroup';
 import SearchForm from '../src/components/molecules/SearchForm';
 import BannerSlider from '../src/components/organisms/BannerSlider';
+import ClassCardWrapper from '../src/components/organisms/ClassCardWrapper';
 import Footer from '../src/components/organisms/Footer';
+import HeaderMobile from '../src/components/organisms/HeaderMobile';
 import Navbar from '../src/components/organisms/Navbar';
 
 const Home: NextPage = () => {
@@ -11,21 +15,29 @@ const Home: NextPage = () => {
     <div className="flex flex-col">
       <main className="flex flex-col min-h-screen">
         <Navbar isLogin />
+
+        <HeaderMobile />
+
         <div className="page-wrapper">
           <BannerSlider />
 
-          <h1 className="text-5xl font-normal font-sans text-gray-800 text-center mt-10">
-            Kelas Pilihan
-          </h1>
-          <p className="font-sans text-base text-gray-800 text-center lg:w-1/2 mx-auto mb-6 mt-3">
-            Kelas Pilihan terbaik dengan guru yang mahir untuk Passionmu
-          </p>
+          <Gap display="block" className="my-6 lg:my-10" />
+
+          <HeadingGroup
+            title="Kelas Pilihan"
+            subtitle="Kelas Pilihan terbaik dengan guru yang mahir untuk Passionmu"
+          />
+          <Gap display="block" className="my-6" />
 
           <SearchForm />
 
-          <Gap display="block" className="my-5" />
+          <Gap display="block" className="my-5 md:my-7" />
 
           <ClassFilter />
+
+          <Gap display="block" className="my-4" />
+
+          <ClassCardWrapper />
         </div>
 
         <div className="h-72"></div>

@@ -18,7 +18,7 @@ export default function ButtonFilter(props: ButtonFilterProps) {
   }
   return (
     <button
-      className={`text-sm px-3 py-1 ${className} active:ring-2 ring-offset-2  rounded-full font-sans focus:outline-none focus:ring-2 focus:ring-primary`}
+      className={`text-sm px-3 py-1 ${className} active:ring-2 ring-offset-2  rounded-full font-sans focus:outline-none focus:ring-2 focus:ring-gray-300`}
       onClick={onClick}
     >
       {children}

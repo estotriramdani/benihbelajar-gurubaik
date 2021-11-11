@@ -6,17 +6,17 @@ import Slider from 'react-slick';
 const images = [
   {
     id: 0,
-    image: 'https://source.unsplash.com/1208x320/?smart',
+    image: 'https://source.unsplash.com/1208x400/?smart',
     link: '/to-link',
   },
   {
     id: 1,
-    image: 'https://source.unsplash.com/1208x320/?study',
+    image: 'https://source.unsplash.com/1208x400/?study',
     link: '/to-link',
   },
   {
     id: 2,
-    image: 'https://source.unsplash.com/1208x320/?student',
+    image: 'https://source.unsplash.com/1208x400/?student',
     link: '/to-link',
   },
 ];
@@ -34,7 +34,7 @@ export default function BannerSlider() {
   };
 
   return (
-    <div className="mt-8 pb-3.5">
+    <div className="mt-8 pb-3.5 hidden lg:block">
       <div className="relative w-full rounded-xl">
         <Slider {...settings}>
           {images.map((image) => (
