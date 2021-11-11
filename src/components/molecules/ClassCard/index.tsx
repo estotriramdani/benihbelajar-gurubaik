@@ -5,8 +5,8 @@ import Gap from '../../atoms/Gap';
 
 export default function ClassCard() {
   return (
-    <div className="block w-60 p-3 shadow rounded-lg font-sans flex-shrink-0">
-      <div className="relative w-full h-36 rounded-lg overflow-hidden z-10">
+    <div className="block w-60 p-3 shadow rounded-lg font-sans flex-shrink-0 relative">
+      <div className="relative w-full h-36 rounded-lg overflow-hidden">
         <Image
           src="https://source.unsplash.com/300x210/?class"
           alt=""

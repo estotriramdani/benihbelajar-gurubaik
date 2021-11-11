@@ -81,7 +81,7 @@ export default function MobileNavbar(props: MobileNavbarProps) {
         onClick={toggleMenu}
       ></div>
       <button
-        className="w-16 h-16 fixed bottom-7 right-5 bg-gradient-to-br to-red-600 from-primary outline-none rounded-full active:ring-4 active:ring-offset-4 ring-offset-transparent active:ring-red-600 md:hidden shadow-2xl border-1 border-white"
+        className="w-16 h-16 fixed bottom-7 right-5 bg-gradient-to-br to-red-600 from-primary outline-none rounded-full active:ring-4 active:ring-offset-4 ring-offset-transparent active:ring-red-600 md:hidden shadow-2xl border-1 border-white z-10"
         onClick={toggleMenu}
         id="toggleButton"
       >
