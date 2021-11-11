@@ -1,4 +1,7 @@
 import type { NextPage } from 'next';
+import Gap from '../src/components/atoms/Gap';
+import ClassFilter from '../src/components/molecules/ClassFilter';
+import SearchForm from '../src/components/molecules/SearchForm';
 import BannerSlider from '../src/components/organisms/BannerSlider';
 import Footer from '../src/components/organisms/Footer';
 import Navbar from '../src/components/organisms/Navbar';
@@ -18,21 +21,11 @@ const Home: NextPage = () => {
             Kelas Pilihan terbaik dengan guru yang mahir untuk Passionmu
           </p>
 
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert('enter');
-            }}
-            className="rounded-full py-3 px-7 focus-within:ring-2 ring-offset-2 ring-gray-500 ring-opacity-100 bg-gray-300 w-1/3 mx-auto relative flex justify-between items-center gap-3">
-            <input
-              type="text"
-              className="flex-1 block focus:outline-none bg-transparent text-black focus:placeholder-gray-500"
-              placeholder="Cari ..."
-            />
-            <button className="flex-shrink">
-              <i className="bi bi-search"></i>
-            </button>
-          </form>
+          <SearchForm />
+
+          <Gap display="block" className="my-5" />
+
+          <ClassFilter />
         </div>
 
         <div className="h-72"></div>
