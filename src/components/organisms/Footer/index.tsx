@@ -11,7 +11,7 @@ export default function Footer() {
           height={`100%`}
           objectFit="contain"
         />
-        <p className="text-gray-200 text-sm w-1/2">
+        <p className="text-gray-200 text-sm md:w-1/2">
           Benih Belajar adalah tempat kamu menemukan passionmu dan
           mengembangkannya bersama guru-guru yang terampil di bidang tersebut.
         </p>
@@ -32,7 +32,8 @@ export default function Footer() {
               href="https://instgram.com"
               target="_blank"
               rel="noreferrer"
-              className="text-4xl hover:text-gray-50">
+              className="text-4xl hover:text-gray-50"
+            >
               <i className="bi bi-instagram"></i>
             </a>
           </li>
@@ -41,7 +42,8 @@ export default function Footer() {
               href="https://facebook.com"
               target="_blank"
               rel="noreferrer"
-              className="text-4xl hover:text-gray-50">
+              className="text-4xl hover:text-gray-50"
+            >
               <i className="bi bi-facebook"></i>
             </a>
           </li>
@@ -50,7 +52,8 @@ export default function Footer() {
               href="https://facebook.com"
               target="_blank"
               rel="noreferrer"
-              className="text-4xl hover:text-gray-50">
+              className="text-4xl hover:text-gray-50"
+            >
               <i className="bi bi-linkedin"></i>
             </a>
           </li>

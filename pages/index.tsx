@@ -27,6 +27,7 @@ const Home: NextPage = () => {
             title="Kelas Pilihan"
             subtitle="Kelas Pilihan terbaik dengan guru yang mahir untuk Passionmu"
           />
+
           <Gap display="block" className="my-6" />
 
           <SearchForm />
@@ -38,6 +39,13 @@ const Home: NextPage = () => {
           <Gap display="block" className="my-4" />
 
           <ClassCardWrapper />
+
+          <Gap display="block" className="my-7" />
+
+          <HeadingGroup
+            title="Guru Baik yang Mengajar"
+            subtitle="Yuk, kenalan dengan Guru yang mahir untuk Passionmu"
+          />
         </div>
 
         <div className="h-72"></div>

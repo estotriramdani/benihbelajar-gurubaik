@@ -1,8 +1,12 @@
+import ScrollContainer from 'react-indiana-drag-scroll';
 import ClassCard from '../../molecules/ClassCard';
 
 export default function ClassCardWrapper() {
   return (
-    <div className="flex overflow-y-auto gap-3.5 p-2">
+    <ScrollContainer
+      className="flex overflow-y-auto gap-3.5 py-2 lg:py-4 cursor-grab active:cursor-grabbing"
+      nativeMobileScroll={true}
+    >
       <ClassCard />
       <ClassCard />
       <ClassCard />
@@ -11,6 +15,6 @@ export default function ClassCardWrapper() {
       <ClassCard />
       <ClassCard />
       <ClassCard />
-    </div>
+    </ScrollContainer>
   );
 }

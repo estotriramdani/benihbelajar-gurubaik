@@ -16,6 +16,10 @@ module.exports = {
         primary: '#BB1529',
         amber: colors.amber,
       },
+      cursor: {
+        grab: 'grab',
+        grabbing: 'grabbing',
+      },
     },
   },
   variants: {

@@ -37,7 +37,7 @@ export default function ClassCard() {
           <i className="bi bi-currency-dollar mr-1"></i> Rp49.000,00*
         </p>
         <div className="flex gap-1 mt-3">
-          <button className="rounded-md h-8 flex-1 border border-primary text-primary font-medium text-sm d-block">
+          <button className="rounded-md h-8 flex-1 border border-primary text-primary font-medium text-sm d-block hover:bg-primary hover:text-white">
             Lihat Detail
           </button>
           <button className="rounded-md w-8 h-8 bg-gray-300 text-gray-800 hover:bg-gray-400 transition-all duration-100">
