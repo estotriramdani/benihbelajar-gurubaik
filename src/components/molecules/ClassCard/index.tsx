@@ -5,7 +5,7 @@ import Gap from '../../atoms/Gap';
 
 export default function ClassCard() {
   return (
-    <div className="block w-60 p-3 shadow rounded-lg font-sans flex-shrink-0 relative">
+    <div className="block w-60 p-3 shadow rounded-lg font-sans flex-shrink-0 relative transform hover:-translate-y-1 transition-all">
       <div className="relative w-full h-36 rounded-lg overflow-hidden">
         <Image
           src="https://source.unsplash.com/300x210/?class"
@@ -40,7 +40,7 @@ export default function ClassCard() {
           <i className="bi bi-currency-dollar mr-1"></i> Rp49.000,00*
         </p>
         <div className="flex gap-1 mt-3">
-          <Link href="/">
+          <Link href="/class/detail">
             <a className="d-inline-block flex justify-center items-center rounded-md h-8 flex-1 border border-primary text-primary font-medium text-sm d-block hover:bg-primary hover:text-white">
               Lihat Detail
             </a>

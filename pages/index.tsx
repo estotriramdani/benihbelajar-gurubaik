@@ -1,14 +1,18 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import Gap from '../src/components/atoms/Gap';
+import ClassCard from '../src/components/molecules/ClassCard';
 import ClassFilter from '../src/components/molecules/ClassFilter';
 import HeadingGroup from '../src/components/molecules/HeadingGroup';
 import SearchForm from '../src/components/molecules/SearchForm';
+import TeacherProfileCard from '../src/components/molecules/TeacherProfileCard';
 import BannerSlider from '../src/components/organisms/BannerSlider';
-import ClassCardWrapper from '../src/components/organisms/ClassCardWrapper';
+import CardHorizontalWrapper from '../src/components/organisms/CardHorizontalWrapper';
 import Footer from '../src/components/organisms/Footer';
 import HeaderMobile from '../src/components/organisms/HeaderMobile';
 import Navbar from '../src/components/organisms/Navbar';
+import { rgbDataURL } from '../src/utils/images/colorBlurry';
 
 const Home: NextPage = () => {
   return (
@@ -38,7 +42,13 @@ const Home: NextPage = () => {
 
           <Gap display="block" className="my-4" />
 
-          <ClassCardWrapper />
+          {[1, 2].map((classCardGroup) => (
+            <CardHorizontalWrapper key={classCardGroup}>
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((classCard) => (
+                <ClassCard key={classCard} />
+              ))}
+            </CardHorizontalWrapper>
+          ))}
 
           <Gap display="block" className="my-7" />
 
@@ -46,9 +56,17 @@ const Home: NextPage = () => {
             title="Guru Baik yang Mengajar"
             subtitle="Yuk, kenalan dengan Guru yang mahir untuk Passionmu"
           />
+
+          <Gap display="block" className="my-3" />
+          <CardHorizontalWrapper>
+            {[1, 2, 3].map((teacher) => (
+              <TeacherProfileCard key={teacher} />
+            ))}
+          </CardHorizontalWrapper>
         </div>
 
-        <div className="h-72"></div>
+        <Gap display="block" className="my-5" />
+
         <Footer />
       </main>
     </div>
