@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 
 const images = [
@@ -22,8 +20,6 @@ const images = [
 ];
 
 export default function BannerSlider() {
-  const [position, setPosition] = useState(0);
-
   const settings = {
     dots: true,
     autoplay: true,

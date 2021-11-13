@@ -1,19 +1,11 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { rgbDataURL } from '../../../utils/images/colorBlurry';
+import ImageWithProps from '../../atoms/ImageWithProps';
 
 export default function TeacherProfileCard() {
   return (
     <div className="rounded-2xl p-4 flex items-start gap-3.5 shadow">
       <div className="relative h-full w-44 rounded-2xl overflow-hidden flex-shrink-0">
-        <Image
-          src="https://source.unsplash.com/200x200/?perempuan"
-          alt=""
-          layout="fill"
-          placeholder="blur"
-          blurDataURL={rgbDataURL(187, 21, 41)}
-          objectFit="cover"
-        />
+        <ImageWithProps src="https://source.unsplash.com/200x200/?perempuan" />
       </div>
       <div className="font-sans w-80">
         <p className="text-gray-800 text-3xl font-medium mb-2">

@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           ))}
 
           <Link href="class">
-            <a className="block text-primary underline text-center">
+            <a className="block text-primary underline text-center font-sasn">
               Muat Lebih Banyak
             </a>
           </Link>

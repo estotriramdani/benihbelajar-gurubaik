@@ -1,5 +1,5 @@
 import { useRouter } from 'next/dist/client/router';
-import { MouseEvent, useState } from 'react';
+import { MouseEvent } from 'react';
 import { ButtonClassFilter } from '../../../interfaces';
 import ButtonFilter from '../../atoms/ButtonFilter';
 

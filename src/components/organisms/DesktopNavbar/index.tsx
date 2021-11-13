@@ -10,7 +10,7 @@ export default function DesktopNavbar(props: DesktopNavbarProps) {
   const { isLogin } = props;
 
   return (
-    <nav className="w-full h-16 bg-primary md:flex justify-between items-center px-6 relative top-0 shadow-md hidden z-40">
+    <nav className="w-full h-16 bg-primary md:flex justify-between transform transition-all duration-200 items-center md:px-10 lg:px-24 relative top-0 shadow-md hidden z-40">
       <Link href="/">
         <a>
           <Image

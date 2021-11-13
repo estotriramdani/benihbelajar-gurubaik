@@ -10,7 +10,7 @@ export default function MoreClassCategory() {
           Pilihan Kelas Lainnya
         </h3>
         <Link href="/class/?category=seni">
-          <a className="text-primary hover:text-opacity-80 transition-all duration-150 underline block mt-1 lg:mt-0">
+          <a className="text-primary hover:text-opacity-80 transition-all duration-150 underline block mt-1 lg:mt-0 font-sans">
             Muat Lebih Banyak
           </a>
         </Link>

@@ -23,7 +23,7 @@ export default function ClassDetail() {
             <div className="flex-shrink-0">
               <DetailClassLeft />
             </div>
-            <div className="w-full lg:w-2/5 mt-1 p-2 lg:p-0 lg:mt-0">
+            <div className="flex-1 mt-1 p-2 lg:p-0 lg:mt-0">
               <ClassDetailCenter />
             </div>
             <div className="w-96 flex-shrink-0">

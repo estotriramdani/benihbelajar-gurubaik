@@ -1,20 +1,12 @@
-import Image from 'next/image';
 import Link from 'next/dist/client/link';
-import { rgbDataURL } from '../../../utils/images/colorBlurry';
 import Gap from '../../atoms/Gap';
+import ImageWithProps from '../../atoms/ImageWithProps';
 
 export default function ClassCard() {
   return (
     <div className="block w-60 p-3 shadow rounded-lg font-sans flex-shrink-0 relative transform hover:-translate-y-1 transition-all">
       <div className="relative w-full h-36 rounded-lg overflow-hidden">
-        <Image
-          src="https://source.unsplash.com/300x210/?class"
-          alt=""
-          layout="fill"
-          placeholder="blur"
-          blurDataURL={rgbDataURL(187, 21, 41)}
-          objectFit="cover"
-        />
+        <ImageWithProps src="https://source.unsplash.com/300x210/?class" />
       </div>
       <div className="p-2">
         <div className="flex text-gray-500 text-sm gap-2 mt-1 mb-1">

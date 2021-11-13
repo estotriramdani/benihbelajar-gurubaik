@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { ReactNode } from 'react';
 
 interface ButtonProps {
@@ -23,7 +22,8 @@ export default function Button(props: ButtonProps) {
     <button
       className={`px-5 py-1 inline-block text-sm focus:outline-none ${
         roundedFull ? 'rounded-full' : 'rounded-md'
-      } border-2 ${classes} ${width ? width : ''}`}>
+      } border-2 ${classes} ${width ? width : ''}`}
+    >
       {children}
     </button>
   );

@@ -1,5 +1,6 @@
 import ButtonFilter from '../../atoms/ButtonFilter';
 import ButtonShare from '../../atoms/ButtonShare';
+import HeadingWithLine from '../../atoms/HeadingWithLine';
 
 export default function ClassDetailCenter() {
   return (
@@ -42,10 +43,7 @@ export default function ClassDetailCenter() {
           </ButtonShare>
         </div>
       </div>
-      <div className="mt-4 lg:mt-2 mb-3 flex gap-3 items-center">
-        <p className="text-primary text-lg">Detail</p>
-        <div className="h-px w-full flex bg-primary"></div>
-      </div>
+      <HeadingWithLine title="Detail" />
       <p className="text-gray-600 text-sm">
         <b>Tujuan pembelajaran:</b> <br />
         Kamu tahu langkah-langkah menggambar manga <br />
