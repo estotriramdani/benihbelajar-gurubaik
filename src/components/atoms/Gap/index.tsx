@@ -1,5 +1,5 @@
 interface GapProps {
-  display: 'block' | 'inline-block' | 'inline';
+  display?: 'block' | 'inline-block' | 'inline';
   width?: number | string;
   height?: number | string;
   className?: string;

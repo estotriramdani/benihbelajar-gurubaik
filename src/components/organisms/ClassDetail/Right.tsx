@@ -21,7 +21,7 @@ export default function ClassDetailRight() {
 
   return (
     <>
-      <div className="sticky top-24 border-2 rounded-2xl p-5 px-10 pb-8">
+      <div className="sticky top-24 border-2 border-primary lg:border-gray-500 border-primary rounded-2xl p-5 px-10 pb-8">
         <p className="font-semibold text-center text-2xl text-gray-600 mb-5">
           Pilih Jadwal
         </p>

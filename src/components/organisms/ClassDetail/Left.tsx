@@ -6,7 +6,7 @@ export default function DetailClassLeft() {
   return (
     <>
       <div className="p-3 shadow-md border rounded-xl">
-        <div className="relative w-72 h-48 bg-gray-700 rounded-xl overflow-hidden">
+        <div className="relative w-full lg:w-72 h-48 bg-gray-700 rounded-xl overflow-hidden">
           <Image
             src="https://source.unsplash.com/500x400/?manga"
             alt=""

@@ -25,8 +25,10 @@ export default function ClassDetailCenter() {
         paling awal sampai sketsa gambarnya jadi. Kelas ini sangat cocok untuk
         kamu yang masih pemula.
       </p>
-      <div className="flex gap-3 items-center">
-        <p className="text-gray-600 text-3xl font-medium">Rp59.000,00</p>
+      <div className="block lg:flex gap-3 items-center">
+        <p className="text-gray-600 text-3xl font-medium mt-3 lg:mt-0">
+          Rp59.000,00
+        </p>
         <p className="text-gray-600">per kelas</p>
         <div className="flex gap-2 mt-4">
           <ButtonShare>
@@ -40,7 +42,7 @@ export default function ClassDetailCenter() {
           </ButtonShare>
         </div>
       </div>
-      <div className="mt-2 mb-3 flex gap-3 items-center">
+      <div className="mt-4 lg:mt-2 mb-3 flex gap-3 items-center">
         <p className="text-primary text-lg">Detail</p>
         <div className="h-px w-full flex bg-primary"></div>
       </div>

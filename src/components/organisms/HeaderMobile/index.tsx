@@ -16,7 +16,9 @@ export default function HeaderMobile() {
             />
           </a>
         </Link>
-        <p className="text-gray-50 mr-4">#passion</p>
+        <Link href="/">
+          <a className="text-gray-50 mr-4">Beranda</a>
+        </Link>
       </div>
       <div className="h-px bg-primary w-full mt-0.5 md:hidden" />
     </>

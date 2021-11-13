@@ -5,12 +5,12 @@ import CardHorizontalWrapper from '../CardHorizontalWrapper';
 export default function MoreClassCategory() {
   return (
     <>
-      <div className="flex justify-between mt-6 items-center">
+      <div className="block lg:flex justify-between mt-6 items-center">
         <h3 className="text-gray-600 text-2xl font-medium font-sans">
           Pilihan Kelas Lainnya
         </h3>
         <Link href="class/category/seni">
-          <a className="text-primary hover:text-opacity-80 transition-all duration-150 underline">
+          <a className="text-primary hover:text-opacity-80 transition-all duration-150 underline block mt-1 lg:mt-0">
             Muat Lebih Banyak
           </a>
         </Link>
