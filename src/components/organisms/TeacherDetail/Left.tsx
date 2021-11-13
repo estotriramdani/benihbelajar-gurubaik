@@ -6,7 +6,7 @@ export default function TeacherDetailLeft() {
     <>
       <div className="p-3 shadow border rounded-xl mb-5">
         <div className="relative w-full lg:w-72 h-72 bg-gray-700 rounded-xl overflow-hidden">
-          <ImageWithProps src="https://source.unsplash.com/500x400/?manga" />
+          <ImageWithProps src="https://source.unsplash.com/500x400/?person,girl" />
         </div>
       </div>
       <div className="mb-4">

@@ -15,7 +15,7 @@ export default function DetailClassLeft() {
         <a className="bg-white rounded-xl border shadow-md p-3 mt-4 flex gap-3 items-center transform transition-all hover:-translate-y-1">
           <div className="relative w-16 h-16 bg-gray-700 rounded-xl overflow-hidden flex-shrink-0">
             <Image
-              src="https://source.unsplash.com/300x300/?wanita"
+              src="https://source.unsplash.com/300x300/?person,girl"
               alt=""
               layout="fill"
               placeholder="blur"

@@ -11,7 +11,7 @@ export default function CardHorizontalWrapper(
   const { children } = props;
   return (
     <ScrollContainer
-      className="flex overflow-y-auto gap-3.5 py-2 lg:py-4 cursor-grab active:cursor-grabbing"
+      className="flex overflow-y-auto gap-3.5 py-2 lg:py-4 cursor-grab active:cursor-grabbing relative"
       nativeMobileScroll={true}
     >
       {children}
