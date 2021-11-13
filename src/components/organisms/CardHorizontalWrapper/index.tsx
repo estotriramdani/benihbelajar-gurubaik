@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 import ScrollContainer from 'react-indiana-drag-scroll';
-import ClassCard from '../../molecules/ClassCard';
 
 interface CardHorizontalWrapperProps {
   children: ReactNode;

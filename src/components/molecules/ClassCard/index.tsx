@@ -33,8 +33,10 @@ export default function ClassCard() {
         </p>
         <Gap display="block" className="my-3" />
         <p className="text-gray-600 text-sm mb-1">
-          <i className="bi bi-calendar-week mr-1"></i> 17 Agustus 2021, 15.00
-          WIB
+          <i className="bi bi-calendar-week mr-1"></i> 17 Agustus 2021
+        </p>
+        <p className="text-gray-600 text-sm mb-1">
+          <i className="bi bi-clock mr-1"></i> 15.00 WIB
         </p>
         <p className="text-gray-600 text-sm">
           <i className="bi bi-currency-dollar mr-1"></i> Rp49.000,00*

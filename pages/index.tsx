@@ -1,6 +1,4 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 import Gap from '../src/components/atoms/Gap';
 import ClassCard from '../src/components/molecules/ClassCard';
 import ClassFilter from '../src/components/molecules/ClassFilter';
@@ -12,7 +10,6 @@ import CardHorizontalWrapper from '../src/components/organisms/CardHorizontalWra
 import Footer from '../src/components/organisms/Footer';
 import HeaderMobile from '../src/components/organisms/HeaderMobile';
 import Navbar from '../src/components/organisms/Navbar';
-import { rgbDataURL } from '../src/utils/images/colorBlurry';
 
 const Home: NextPage = () => {
   return (

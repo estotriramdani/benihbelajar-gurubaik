@@ -7,7 +7,7 @@ export default function TeacherProfileCard() {
     <div className="rounded-2xl p-4 flex items-start gap-3.5 shadow">
       <div className="relative h-full w-44 rounded-2xl overflow-hidden flex-shrink-0">
         <Image
-          src="https://source.unsplash.com/200x200/?girl"
+          src="https://source.unsplash.com/200x200/?perempuan"
           alt=""
           layout="fill"
           placeholder="blur"
