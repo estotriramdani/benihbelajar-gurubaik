@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Gap from '../../src/components/atoms/Gap';
 import Footer from '../../src/components/organisms/Footer';
 import HeaderMobile from '../../src/components/organisms/HeaderMobile';
@@ -35,7 +34,6 @@ export default function ClassDetail() {
           <MoreClassTeacher />
           <MoreClassCategory />
         </div>
-        <Gap display="block" className="my-7" />
         <Footer />
       </main>
     </div>

@@ -8,7 +8,7 @@ interface ButtonFilterProps {
 }
 
 export default function ButtonFilter(props: ButtonFilterProps) {
-  const { type, onClick, children } = props;
+  const { type, onClick, children, isActive } = props;
   let className = '';
   if (type === 'primary') {
     className += 'bg-primary text-white active:ring-primary';
@@ -18,7 +18,9 @@ export default function ButtonFilter(props: ButtonFilterProps) {
   }
   return (
     <button
-      className={`text-sm px-3 py-1 ${className} active:ring-2 ring-offset-2  rounded-full font-sans focus:outline-none focus:ring-2 focus:ring-primary lg:focus:ring-gray-300 `}
+      className={`text-sm px-3 py-1 ${className} active:ring-2 ring-offset-2  rounded-full font-sans focus:outline-none focus:ring-2 focus:ring-primary lg:focus:ring-gray-300 ${
+        isActive ? 'buttonActive' : ''
+      }`}
       onClick={onClick}
     >
       {children}

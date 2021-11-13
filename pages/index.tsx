@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Link from 'next/link';
 import Gap from '../src/components/atoms/Gap';
 import ClassCard from '../src/components/molecules/ClassCard';
 import ClassFilter from '../src/components/molecules/ClassFilter';
@@ -10,6 +11,7 @@ import CardHorizontalWrapper from '../src/components/organisms/CardHorizontalWra
 import Footer from '../src/components/organisms/Footer';
 import HeaderMobile from '../src/components/organisms/HeaderMobile';
 import Navbar from '../src/components/organisms/Navbar';
+import { buttonClassFilterHome } from '../src/data/classFilter';
 
 const Home: NextPage = () => {
   return (
@@ -35,7 +37,7 @@ const Home: NextPage = () => {
 
           <Gap display="block" className="my-5 md:my-7" />
 
-          <ClassFilter />
+          <ClassFilter buttons={buttonClassFilterHome} />
 
           <Gap display="block" className="my-4" />
 
@@ -46,6 +48,12 @@ const Home: NextPage = () => {
               ))}
             </CardHorizontalWrapper>
           ))}
+
+          <Link href="class">
+            <a className="block text-primary underline text-center">
+              Muat Lebih Banyak
+            </a>
+          </Link>
 
           <Gap display="block" className="my-7" />
 
@@ -61,8 +69,6 @@ const Home: NextPage = () => {
             ))}
           </CardHorizontalWrapper>
         </div>
-
-        <Gap display="block" className="my-5" />
 
         <Footer />
       </main>
