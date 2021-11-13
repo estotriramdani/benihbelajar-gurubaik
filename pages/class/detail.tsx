@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Gap from '../../src/components/atoms/Gap';
 import Footer from '../../src/components/organisms/Footer';
 import HeaderMobile from '../../src/components/organisms/HeaderMobile';
@@ -7,6 +6,8 @@ import Navbar from '../../src/components/organisms/Navbar';
 import DetailClassLeft from '../../src/components/organisms/ClassDetail/Left';
 import ClassDetailCenter from '../../src/components/organisms/ClassDetail/Center';
 import ClassDetailRight from '../../src/components/organisms/ClassDetail/Right';
+import MoreClassTeacher from '../../src/components/organisms/ClassDetail/MoreClassTeacher';
+import MoreClassCategory from '../../src/components/organisms/ClassDetail/MoreClassCategory';
 
 export default function ClassDetail() {
   return (
@@ -30,6 +31,8 @@ export default function ClassDetail() {
               <ClassDetailRight />
             </div>
           </div>
+          <MoreClassTeacher />
+          <MoreClassCategory />
         </div>
         <Gap display="block" className="my-7" />
         <Footer />
