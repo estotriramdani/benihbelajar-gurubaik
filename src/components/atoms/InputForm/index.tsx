@@ -11,7 +11,7 @@ interface InputFormProps {
 export default function InputForm(props: InputFormProps) {
   const { placeholder, id, type, value, isPassword, onChange } = props;
 
-  const [formType, setFormType] = useState(type);
+  const [formType, setFormType] = useState(type || 'text');
 
   const showPassword = () => {
     if (formType === 'password') setFormType('text');

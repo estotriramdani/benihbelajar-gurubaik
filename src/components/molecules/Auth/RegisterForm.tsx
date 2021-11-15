@@ -4,8 +4,9 @@ import Gap from '../../atoms/Gap';
 import InputForm from '../../atoms/InputForm';
 import { toast } from 'react-toastify';
 
-export default function LoginForm() {
+export default function RegisterForm() {
   const [dataForm, setDataForm] = useState({
+    fullname: '',
     email: '',
     password: '',
   });
@@ -20,10 +21,14 @@ export default function LoginForm() {
   };
 
   const handleSubmitForm = () => {
-    if (dataForm.email === '' || dataForm.password === '') {
+    if (
+      dataForm.email === '' ||
+      dataForm.password === '' ||
+      dataForm.fullname === ''
+    ) {
       toast.error('Semua kolom harus diisi!');
     } else {
-      toast.success(`Email ${dataForm.email} berhasil login`);
+      toast.success(`Nantikan kelanjutannya`);
     }
   };
   return (
@@ -34,6 +39,13 @@ export default function LoginForm() {
       }}
       className="mt-8"
     >
+      <InputForm
+        id="fullname"
+        placeholder="Nama Lengkap"
+        value={dataForm.fullname}
+        onChange={(e) => handleChangeForm(e)}
+      />
+      <Gap className="my-4" />
       <InputForm
         type="text"
         id="email"
@@ -60,7 +72,7 @@ export default function LoginForm() {
         type="submit"
         className="bg-primary border-2 border-primary text-white py-3 px-10 rounded-lg hover:text-white hover:bg-primary transition-all duration-100 transform hover:-translate-y-1 block mx-auto"
       >
-        Masuk
+        Selanjutnya
       </button>
     </form>
   );

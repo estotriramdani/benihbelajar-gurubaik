@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Gap from '../src/components/atoms/Gap';
 import LoginForm from '../src/components/molecules/Auth/LoginForm';
 
 export default function Login() {
