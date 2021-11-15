@@ -2,6 +2,7 @@ import { MouseEvent, useState } from 'react';
 import Link from 'next/link';
 import Gap from '../../atoms/Gap';
 import InputForm from '../../atoms/InputForm';
+import { toast } from 'react-toastify';
 
 export default function LoginForm() {
   const [dataForm, setDataForm] = useState({
@@ -20,6 +21,7 @@ export default function LoginForm() {
 
   const handleSubmitForm = () => {
     console.log(dataForm);
+    toast.success(`Email ${dataForm.email} berhasil login`);
   };
   return (
     <form
