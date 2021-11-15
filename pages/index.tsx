@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex flex-col">
       <main className="flex flex-col min-h-screen">
-        <Navbar isLogin />
+        <Navbar isLogin={false} />
 
         <HeaderMobile />
 

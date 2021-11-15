@@ -59,7 +59,7 @@ export default function MobileNavbar(props: MobileNavbarProps) {
           {!isLogin ? (
             <>
               <MobileNavLink href="/mengajar">Mengajar</MobileNavLink>
-              <MobileNavLink href="/belajar">Belajar</MobileNavLink>
+              <MobileNavLink href="/login">Belajar</MobileNavLink>
             </>
           ) : (
             <>
