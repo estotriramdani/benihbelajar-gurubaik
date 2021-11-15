@@ -30,6 +30,7 @@ export default function LoginForm() {
       className="mt-8"
     >
       <InputForm
+        type="text"
         id="email"
         placeholder="Alamat Email"
         value={dataForm.email}
