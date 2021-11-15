@@ -5,7 +5,7 @@ import LoginForm from '../src/components/molecules/Auth/LoginForm';
 export default function Login() {
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="flex-1 font-sans flex justify-center items-center min-h-screen w-full relative">
+      <div className="flex-1 font-sans flex justify-center items-center min-h-screen relative mx-auto w-4/5">
         <div className="px-4">
           <div className="flex flex-col items-center">
             <Link href="/">

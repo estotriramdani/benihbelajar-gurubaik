@@ -5,7 +5,7 @@ import RegisterForm from '../src/components/molecules/Auth/RegisterForm';
 export default function Register() {
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="flex-1 font-sans flex justify-center items-center py-10 min-h-screen relative order-1 lg:order-2 lg:w-4/5 w-full">
+      <div className="flex-1 font-sans flex justify-center items-center py-10 min-h-screen relative order-1 lg:order-2 lg:w-4/5 mx-auto w-4/5">
         <div className="px-4">
           <div className="flex flex-col items-center">
             <h2 className="text-center text-5xl mb-3 text-primary">Belajar</h2>
