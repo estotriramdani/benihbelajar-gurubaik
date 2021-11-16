@@ -1,4 +1,3 @@
-import Link from 'next/dist/client/link';
 import Gap from '../../atoms/Gap';
 import Skeleton from 'react-loading-skeleton';
 

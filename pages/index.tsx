@@ -6,6 +6,7 @@ import ClassFilter from '../src/components/molecules/ClassFilter';
 import HeadingGroup from '../src/components/molecules/HeadingGroup';
 import SearchForm from '../src/components/molecules/SearchForm';
 import TeacherProfileCard from '../src/components/molecules/TeacherProfileCard';
+import TeacherProfileCardSkeleton from '../src/components/molecules/TeacherProfileCard/Skeleton';
 import BannerSlider from '../src/components/organisms/BannerSlider';
 import CardHorizontalWrapper from '../src/components/organisms/CardHorizontalWrapper';
 import Footer from '../src/components/organisms/Footer';
@@ -64,8 +65,11 @@ const Home: NextPage = () => {
 
           <Gap display="block" className="my-3" />
           <CardHorizontalWrapper>
-            {[1, 2, 3].map((teacher) => (
+            {/* {[1, 2, 3].map((teacher) => (
               <TeacherProfileCard key={teacher} />
+            ))} */}
+            {[1, 2, 3].map((teacher) => (
+              <TeacherProfileCardSkeleton key={teacher} />
             ))}
           </CardHorizontalWrapper>
         </div>
