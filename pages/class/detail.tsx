@@ -7,6 +7,9 @@ import ClassDetailCenter from '../../src/components/organisms/ClassDetail/Center
 import ClassDetailRight from '../../src/components/organisms/ClassDetail/Right';
 import MoreClassTeacher from '../../src/components/organisms/ClassDetail/MoreClassTeacher';
 import MoreClassCategory from '../../src/components/organisms/ClassDetail/MoreClassCategory';
+import DetailClassLeftSkeleton from '../../src/components/organisms/ClassDetailSkeleton/Left';
+import ClassDetailCenterSkeleton from '../../src/components/organisms/ClassDetailSkeleton/Center';
+import ClassDetailRightSkeleton from '../../src/components/organisms/ClassDetailSkeleton/Right';
 
 export default function ClassDetail() {
   return (
@@ -21,13 +24,16 @@ export default function ClassDetail() {
 
           <div className="flex-col lg:flex-row flex gap-4 lg:gap-10 relative font-sans justify-between">
             <div className="flex-shrink-0">
-              <DetailClassLeft />
+              {/* <DetailClassLeft /> */}
+              <DetailClassLeftSkeleton />
             </div>
             <div className="flex-1 mt-1 p-2 lg:p-0 lg:mt-0">
-              <ClassDetailCenter />
+              {/* <ClassDetailCenter /> */}
+              <ClassDetailCenterSkeleton />
             </div>
             <div className="w-full lg:w-96 flex-shrink-0">
-              <ClassDetailRight />
+              {/* <ClassDetailRight /> */}
+              <ClassDetailRightSkeleton />
             </div>
           </div>
           <Gap className="h-px w-full bg-primary mt-8 lg:hidden" />
