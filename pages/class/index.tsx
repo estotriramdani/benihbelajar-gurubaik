@@ -2,6 +2,7 @@ import { useRouter } from 'next/dist/client/router';
 import React, { useEffect, useState } from 'react';
 import Gap from '../../src/components/atoms/Gap';
 import ClassCard from '../../src/components/molecules/ClassCard';
+import ClassCardSkeleton from '../../src/components/molecules/ClassCard/Skeleton';
 import ClassFilter from '../../src/components/molecules/ClassFilter';
 import HeadingGroup from '../../src/components/molecules/HeadingGroup';
 import Footer from '../../src/components/organisms/Footer';
@@ -42,11 +43,14 @@ export default function Class() {
           <Gap className="block my-5" />
 
           <div className="flex flex-wrap justify-center gap-4">
-            {[
+            {/* {[
               1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
               20,
             ].map((item) => (
               <ClassCard key={item} />
+            ))} */}
+            {[1, 2, 3, 4].map((item) => (
+              <ClassCardSkeleton key={item} />
             ))}
           </div>
         </div>
