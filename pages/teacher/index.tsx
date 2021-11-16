@@ -25,7 +25,7 @@ export default function Teacher() {
             <div className="flex-1">
               <TeacherDetailCenter />
             </div>
-            <div className="w-96">
+            <div className="flex-1 lg:w-96">
               <HeadingWithLine title="Ulasan" />
               <div className="flex flex-col gap-4">
                 <TeacherTestimoniCard />
